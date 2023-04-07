@@ -58,8 +58,8 @@ print()
 
 x = np.array([2.51, 2.35, 2.74, 2.56, 2.40, 2.36, 2.65, 2.7, 2.67, 2.34])
 std = (((x - x.mean())**2).sum() / (10 - 1))**0.5
-Tn = (x.mean() - 2.5) / (std / 10**0.5) 
+tn = (x.mean() - 2.5) / (std / 10**0.5) 
 t = abs(stats.t.ppf(0.05, 9))
 
-print(f't = {t}, Tn = {Tn}')
+print(f't = {t}, Tn = {tn}')
 print('t > Tn, гипотеза верна.')
